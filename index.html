@@ -5,27 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Childbirth Preparation Website</title>
     <link rel="stylesheet" href="style.css">
+
     <style>
-        /* Simple button style */
+        /* Button Container */
+        .btn-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Big Themed Button */
         .btn {
             display: inline-block;
-            padding: 12px 20px;
-            background-color: #0077cc;
+            padding: 18px 30px;
+            background-color: #7aa0ff;
             color: white;
             text-decoration: none;
-            border-radius: 6px;
+            border-radius: 10px;
             font-weight: bold;
-            margin-top: 20px;
+            font-size: 22px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+            transition: background-color 0.2s ease, transform 0.2s ease;
         }
+
         .btn:hover {
-            background-color: #005fa3;
+            background-color: #5a7bd8;
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
     <div class="container">
 
-        <!-- Navigation (Hospital Bag Checklist removed) -->
+        <!-- Navigation (Home page only shows Project Overview) -->
         <nav>
             <a href="project-overview.html">Project Overview</a>
         </nav>
@@ -36,11 +47,14 @@
             checklists, timelines, partner guides, and helpful resources for expecting parents.
         </p>
 
-        <!-- Clickable Button -->
-        <a class="btn" href="hospital-bag-checklist.html">Hospital Bag Checklist</a>
+        <!-- Big Centered Button -->
+        <div class="btn-container">
+            <a class="btn" href="hospital-bag-checklist.html">👜 Hospital Bag Checklist</a>
+        </div>
 
     </div>
 </body>
 </html>
+
 
 
