@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    background: #f5f5f5;
+    background: #f2f7ff; /* soft baby-blue background */
     padding: 40px;
     line-height: 1.6;
 }
@@ -10,10 +10,11 @@ body {
 .container {
     max-width: 800px;
     margin: auto;
-    background: white;
+    background: #ffffff;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+    border: 2px solid #e3e9ff; /* subtle border */
 }
 
 /* Navigation */
@@ -25,7 +26,7 @@ nav {
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #0077cc;
+    color: #5a7bd8; /* soft blue */
     font-weight: bold;
 }
 
@@ -35,7 +36,7 @@ nav a:hover {
 
 /* Typography */
 h1, h2 {
-    color: #333;
+    color: #3a4a7a; /* deeper calming blue */
 }
 
 p {
@@ -46,10 +47,36 @@ p {
 hr {
     margin: 30px 0;
     border: none;
-    border-top: 1px solid #ddd;
+    border-top: 2px solid #d6ddff;
 }
 
-/* Lists */
+/* Themed Lists */
 ul {
-    margin-left: 20px;
+    background: #f8faff; /* very light pastel background */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e0e6ff;
+    list-style: none;
+}
+
+ul li {
+    padding: 10px 0;
+    color: #4a5a8a;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+/* Cute pastel bullet icons */
+ul li::before {
+    content: "🍼"; /* baby bottle icon */
+    margin-right: 12px;
+    font-size: 18px;
+    color: #7aa0ff;
+}
+
+/* Optional: Section headers get a soft underline */
+h2 {
+    border-bottom: 3px solid #d6ddff;
+    padding-bottom: 5px;
 }
