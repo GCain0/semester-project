@@ -7,14 +7,17 @@
   <link rel="stylesheet" href="style.css">
 
   <style>
+    /* Desktop + general styling */
     .btn-container {
-      text-align: center;
+      display: flex;
+      justify-content: center;
       margin-top: 30px;
     }
 
     .btn {
-      display: inline-block;
-      width: 320px; /* ensures all buttons are equal width */
+      display: block;
+      width: 100%;
+      max-width: 320px;     /* keeps all buttons equal on desktop */
       padding: 18px 30px;
       background-color: #7aa0ff;
       color: white;
@@ -29,6 +32,34 @@
     .btn:hover {
       background-color: #5a7bd8;
       transform: scale(1.05);
+    }
+
+    /* Mobile-specific adjustments */
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 1.6em;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1em;
+        line-height: 1.5;
+      }
+
+      .btn {
+        width: 95%;          /* fills the screen nicely */
+        max-width: none;     /* removes desktop limit */
+        font-size: 18px;     /* reduces emoji/text height */
+        padding: 14px 16px;  /* balanced spacing for phones */
+      }
+
+      .btn-container {
+        margin-top: 20px;
+      }
     }
   </style>
 </head>
