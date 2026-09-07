@@ -5,64 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Childbirth Preparation Website</title>
   <link rel="stylesheet" href="style.css">
-
-  <style>
-    /* Desktop + general styling */
-    .btn-container {
-      display: flex;
-      justify-content: center;
-      margin-top: 30px;
-    }
-
-    .btn {
-      display: block;
-      width: 100%;
-      max-width: 320px;     /* keeps all buttons equal on desktop */
-      padding: 18px 30px;
-      background-color: #7aa0ff;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-      font-size: 22px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-      transition: background-color 0.2s ease, transform 0.2s ease;
-    }
-
-    .btn:hover {
-      background-color: #5a7bd8;
-      transform: scale(1.05);
-    }
-
-    /* Mobile-specific adjustments */
-    @media (max-width: 600px) {
-      body {
-        padding: 10px;
-      }
-
-      h1 {
-        font-size: 1.6em;
-        text-align: center;
-      }
-
-      p {
-        font-size: 1em;
-        line-height: 1.5;
-      }
-
-      .btn {
-        width: 95%;          /* fills the screen nicely */
-        max-width: none;     /* removes desktop limit */
-        font-size: 18px;     /* reduces emoji/text height */
-        padding: 14px 16px;  /* balanced spacing for phones */
-      }
-
-      .btn-container {
-        margin-top: 20px;
-      }
-    }
-  </style>
 </head>
+
 <body>
   <div class="container">
     <nav>
@@ -74,6 +18,13 @@
       This site includes checklists, guides, and resources to help expecting parents feel prepared and confident.
     </p>
 
+    <!-- COUNTDOWN TIMER -->
+    <div id="countdown-box">
+      <h2>Baby Due-Date Countdown</h2>
+      <p id="countdown"></p>
+    </div>
+
+    <!-- BUTTONS -->
     <div class="btn-container">
       <a class="btn" href="hospital-bag-checklist.html">👜 Hospital Bag Checklist</a>
     </div>
@@ -86,5 +37,7 @@
       <a class="btn" href="newborn-essentials.html">🍼 Newborn Essentials Checklist</a>
     </div>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
