@@ -36,7 +36,7 @@
 <body>
     <div class="container">
 
-        <!-- Navigation (no self-link) -->
+        <!-- Navigation -->
         <nav>
             <a href="index.html">Home</a>
             <a href="project-overview.html">Project Overview</a>
@@ -50,69 +50,73 @@
 
         <hr>
 
-        <h2>Clothing 👕</h2>
-        <ul>
-            <li>Onesies (short and long sleeve)</li>
-            <li>Sleepers and footed pajamas</li>
-            <li>Socks and mittens</li>
-            <li>Soft hats</li>
-            <li>Swaddle blankets</li>
-        </ul>
+        <!-- Collapsible Sections -->
 
-        <hr>
+        <h2 class="collapsible">Clothing 👕</h2>
+        <div class="content">
+            <ul>
+                <li>Onesies (short and long sleeve)</li>
+                <li>Sleepers and footed pajamas</li>
+                <li>Socks and mittens</li>
+                <li>Soft hats</li>
+                <li>Swaddle blankets</li>
+            </ul>
+        </div>
 
-        <h2>Feeding 🥣</h2>
-        <ul>
-            <li>Bottles (if bottle-feeding)</li>
-            <li>Formula (if needed)</li>
-            <li>Burp cloths</li>
-            <li>Nursing pillow (if breastfeeding)</li>
-            <li>Bottle brush and drying rack</li>
-        </ul>
+        <h2 class="collapsible">Feeding 🥣</h2>
+        <div class="content">
+            <ul>
+                <li>Bottles (if bottle-feeding)</li>
+                <li>Formula (if needed)</li>
+                <li>Burp cloths</li>
+                <li>Nursing pillow (if breastfeeding)</li>
+                <li>Bottle brush and drying rack</li>
+            </ul>
+        </div>
 
-        <hr>
+        <h2 class="collapsible">Diapering 🚼</h2>
+        <div class="content">
+            <ul>
+                <li>Newborn diapers</li>
+                <li>Wipes (sensitive skin recommended)</li>
+                <li>Diaper cream</li>
+                <li>Changing pad</li>
+                <li>Diaper pail or disposal bags</li>
+            </ul>
+        </div>
 
-        <h2>Diapering 🚼</h2>
-        <ul>
-            <li>Newborn diapers</li>
-            <li>Wipes (sensitive skin recommended)</li>
-            <li>Diaper cream</li>
-            <li>Changing pad</li>
-            <li>Diaper pail or disposal bags</li>
-        </ul>
+        <h2 class="collapsible">Bathing 🛁</h2>
+        <div class="content">
+            <ul>
+                <li>Baby bathtub</li>
+                <li>Baby shampoo and wash</li>
+                <li>Soft towels</li>
+                <li>Washcloths</li>
+                <li>Baby lotion</li>
+            </ul>
+        </div>
 
-        <hr>
+        <h2 class="collapsible">Sleep Essentials 😴</h2>
+        <div class="content">
+            <ul>
+                <li>Bassinet or crib</li>
+                <li>Firm mattress</li>
+                <li>Fitted sheets</li>
+                <li>White noise machine (optional)</li>
+                <li>Nightlight</li>
+            </ul>
+        </div>
 
-        <h2>Bathing 🛁</h2>
-        <ul>
-            <li>Baby bathtub</li>
-            <li>Baby shampoo and wash</li>
-            <li>Soft towels</li>
-            <li>Washcloths</li>
-            <li>Baby lotion</li>
-        </ul>
-
-        <hr>
-
-        <h2>Sleep Essentials 😴</h2>
-        <ul>
-            <li>Bassinet or crib</li>
-            <li>Firm mattress</li>
-            <li>Fitted sheets</li>
-            <li>White noise machine (optional)</li>
-            <li>Nightlight</li>
-        </ul>
-
-        <hr>
-
-        <h2>Health & Safety ❤️</h2>
-        <ul>
-            <li>Baby thermometer</li>
-            <li>Nail clippers or file</li>
-            <li>Infant first-aid kit</li>
-            <li>Bulb syringe or nasal aspirator</li>
-            <li>Car seat (installed ahead of time)</li>
-        </ul>
+        <h2 class="collapsible">Health & Safety ❤️</h2>
+        <div class="content">
+            <ul>
+                <li>Baby thermometer</li>
+                <li>Nail clippers or file</li>
+                <li>Infant first-aid kit</li>
+                <li>Bulb syringe or nasal aspirator</li>
+                <li>Car seat (installed ahead of time)</li>
+            </ul>
+        </div>
 
         <!-- Back to Home Button -->
         <div class="btn-container">
@@ -120,5 +124,8 @@
         </div>
 
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
