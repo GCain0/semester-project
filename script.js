@@ -30,11 +30,13 @@ setInterval(updateCountdown, 1000);
    COLLAPSIBLE CHECKLIST SECTIONS
    ============================ */
 
-const collapsibles = document.querySelectorAll(".collapsible");
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsibles = document.querySelectorAll(".collapsible");
 
-collapsibles.forEach(section => {
-  section.addEventListener("click", () => {
-    const content = section.nextElementSibling;
-    content.style.display = content.style.display === "block" ? "none" : "block";
+  collapsibles.forEach(section => {
+    section.addEventListener("click", () => {
+      const content = section.nextElementSibling;
+      content.style.display = content.style.display === "block" ? "none" : "block";
+    });
   });
 });
