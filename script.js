@@ -2,28 +2,32 @@
    BABY DUE-DATE COUNTDOWN TIMER
    ============================ */
 
-const dueDate = new Date("2026-12-11T00:00:00");
+const countdownElement = document.getElementById("countdown");
 
-function updateCountdown() {
-  const now = new Date();
-  const timeLeft = dueDate - now;
+if (countdownElement) {
+  const dueDate = new Date("2026-12-11T00:00:00");
 
-  if (timeLeft <= 0) {
-    document.getElementById("countdown").innerText = "Your baby is here!";
-    return;
+  function updateCountdown() {
+    const now = new Date();
+    const timeLeft = dueDate - now;
+
+    if (timeLeft <= 0) {
+      countdownElement.innerText = "Your baby is here!";
+      return;
+    }
+
+    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
+    const seconds = Math.floor((timeLeft / 1000) % 60);
+
+    countdownElement.innerText =
+      `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
   }
 
-  const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
-  const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
-  const seconds = Math.floor((timeLeft / 1000) % 60);
-
-  document.getElementById("countdown").innerText =
-    `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
 }
-
-updateCountdown();
-setInterval(updateCountdown, 1000);
 
 
 /* ============================
