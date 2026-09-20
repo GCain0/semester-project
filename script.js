@@ -1,4 +1,7 @@
-// BABY'S DUE DATE
+/* ============================
+   BABY DUE-DATE COUNTDOWN TIMER
+   ============================ */
+
 const dueDate = new Date("2026-12-11T00:00:00");
 
 function updateCountdown() {
@@ -21,3 +24,17 @@ function updateCountdown() {
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
+
+
+/* ============================
+   COLLAPSIBLE CHECKLIST SECTIONS
+   ============================ */
+
+const collapsibles = document.querySelectorAll(".collapsible");
+
+collapsibles.forEach(section => {
+  section.addEventListener("click", () => {
+    const content = section.nextElementSibling;
+    content.style.display = content.style.display === "block" ? "none" : "block";
+  });
+});

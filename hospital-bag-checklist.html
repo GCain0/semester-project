@@ -1,116 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospital Bag Checklist 👜</title>
-    <link rel="stylesheet" href="style.css">
-
-    <style>
-        /* Bottom Home Button */
-        .btn-container {
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 18px 30px;
-            background-color: #7aa0ff;
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
-            font-weight: bold;
-            font-size: 22px;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-            transition: background-color 0.2s ease, transform 0.2s ease;
-        }
-
-        .btn:hover {
-            background-color: #5a7bd8;
-            transform: scale(1.05);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Bag Checklist</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
+  <div class="container">
+    <nav>
+      <a href="index.html">← Back to Home</a>
+    </nav>
 
-        <!-- Navigation (no self-link) -->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="project-overview.html">Project Overview</a>
-        </nav>
+    <h1>👜 Hospital Bag Checklist</h1>
+    <p>Tap each section to expand and view the items.</p>
 
-        <h1>Hospital Bag Checklist 👜</h1>
-        <p>
-            This checklist helps expecting parents pack everything needed for labor, delivery, 
-            and the first days with your newborn. It keeps things simple, organized, and stress‑free.
-        </p>
-
-        <hr>
-
-        <h2>For the Birthing Parent</h2>
-        <ul>
-            <li>Comfortable robe or gown</li>
-            <li>Non-slip socks or slippers</li>
-            <li>Hair ties or headband</li>
-            <li>Chapstick (hospital air is dry)</li>
-            <li>Phone charger (extra-long cord recommended)</li>
-            <li>Toiletries (toothbrush, deodorant, shampoo)</li>
-            <li>Going-home outfit</li>
-            <li>Nursing bra (if planning to breastfeed)</li>
-        </ul>
-
-        <hr>
-
-        <h2>For the Partner</h2>
-        <ul>
-            <li>Comfortable change of clothes</li>
-            <li>Snacks and drinks</li>
-            <li>Phone charger</li>
-            <li>Pillow or blanket</li>
-            <li>Toiletries</li>
-            <li>List of important contacts</li>
-        </ul>
-
-        <hr>
-
-        <h2>For the Baby</h2>
-        <ul>
-            <li>Onesies and sleepers</li>
-            <li>Swaddle blanket</li>
-            <li>Baby hat and socks</li>
-            <li>Going-home outfit</li>
-            <li>Infant car seat (installed ahead of time)</li>
-        </ul>
-
-        <hr>
-
-        <h2>Important Documents</h2>
-        <ul>
-            <li>IDs for both parents</li>
-            <li>Insurance card</li>
-            <li>Birth plan (optional)</li>
-            <li>Hospital paperwork (if pre-registered)</li>
-        </ul>
-
-        <hr>
-
-        <h2>Optional Comfort Items</h2>
-        <ul>
-            <li>Portable speaker for calming music</li>
-            <li>Essential oils or diffuser</li>
-            <li>Favorite pillow</li>
-            <li>Tablet or book</li>
-        </ul>
-
-        <!-- Bottom Home Button -->
-        <div class="btn-container">
-            <a class="btn" href="index.html">🏠 Back to Home</a>
-        </div>
-
+    <!-- Clothing Section -->
+    <h2 class="collapsible">Clothing</h2>
+    <div class="content">
+      <ul>
+        <li>Comfortable outfit</li>
+        <li>Socks</li>
+        <li>Robe</li>
+        <li>Slippers</li>
+        <li>Nursing bra</li>
+      </ul>
     </div>
+
+    <!-- Toiletries Section -->
+    <h2 class="collapsible">Toiletries</h2>
+    <div class="content">
+      <ul>
+        <li>Toothbrush & toothpaste</li>
+        <li>Hairbrush</li>
+        <li>Deodorant</li>
+        <li>Shampoo & conditioner</li>
+        <li>Face wipes</li>
+      </ul>
+    </div>
+
+    <!-- Baby Items Section -->
+    <h2 class="collapsible">Baby Items</h2>
+    <div class="content">
+      <ul>
+        <li>Onesies</li>
+        <li>Swaddle blanket</li>
+        <li>Diapers</li>
+        <li>Baby hat</li>
+        <li>Going‑home outfit</li>
+      </ul>
+    </div>
+
+    <!-- Important Documents Section -->
+    <h2 class="collapsible">Important Documents</h2>
+    <div class="content">
+      <ul>
+        <li>ID / Driver’s License</li>
+        <li>Insurance card</li>
+        <li>Birth plan (optional)</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
 
